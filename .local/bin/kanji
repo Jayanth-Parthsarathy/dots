@@ -1,0 +1,7 @@
+#!/bin/bash
+
+day_of_week=$(date +%w)
+
+kanji=("日" "月" "火" "水" "木" "金" "土")
+
+echo "${kanji[$day_of_week]}"

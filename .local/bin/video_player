@@ -1,0 +1,3 @@
+#!/bin/bash
+video=$(wl-paste)
+mpv $video --volume=50

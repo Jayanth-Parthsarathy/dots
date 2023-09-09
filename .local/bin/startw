@@ -1,0 +1,5 @@
+#!/bin/sh
+dbus-run-session dwl -s 'somebar' &
+someblocks & 
+mpd &
+pkexec swhkd

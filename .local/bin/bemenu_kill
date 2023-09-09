@@ -1,0 +1,9 @@
+#!/bin/bash
+pid=''
+pid=$(ps -u $USER -o pid,%mem,%cpu,comm | sort  -b -k2 -r | sed -n '1!p' | bemenu_config -i -l 15 | awk '{print $pid}')
+if [ $pid=='' ]; then
+  echo "Choose a process to contiue"
+else
+  kill -15 $pid
+fi
+

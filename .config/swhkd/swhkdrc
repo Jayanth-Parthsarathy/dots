@@ -1,0 +1,92 @@
+#bemenu scripts
+super + shift+ k
+  $HOME/.local/bin/bemenu_kill
+super + r
+  $HOME/.local/bin/bemenu_run_config  
+super + e
+  bemenuunicode
+super + alt + w   
+  $HOME/.local/bin/wifi_prompt
+
+#Lock screen
+super + shift + x 
+	waylock -init-color 0x1e1e2e
+
+
+#wlsunset
+super + shift + d
+	daymode
+super + shift + n
+	nightmode
+
+
+super + shift + w
+  $BROWSER
+super + shift + m 
+	$HOME/.local/bin/music_player
+super + shift + v
+	$HOME/.local/bin/video_player
+
+
+super + q
+  foot
+super +  s
+  $HOME/.local/bin/ss
+
+
+#Audio Control
+XF86AudioLowerVolume
+  pactl set-sink-volume @DEFAULT_SINK@ -5%
+XF86AudioRaiseVolume
+  pactl set-sink-volume @DEFAULT_SINK@ +5%
+XF86AudioMute
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
+super + minus 
+  pactl set-sink-volume @DEFAULT_SINK@ -5%
+super + equal 
+  pactl set-sink-volume @DEFAULT_SINK@ +5%
+super + shift + minus
+  pactl set-sink-volume @DEFAULT_SINK@ -15%
+super + shift + equal
+  pactl set-sink-volume @DEFAULT_SINK@ +15%
+super + space
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+
+
+#Broswer stuff
+super + shift + g 
+  $BROWSER https://gmail.com
+super + shift + m 
+  $BROWSER https://monkeytype.com
+super + shift + y
+  $BROWSER https://youtube.com
+super + shift + s
+  $BROWSER https://slack.com/signin#/workspaces 
+super + shift + c
+  $BROWSER https://chat.openai.com/
+
+
+#bluetooth stuff
+super + b
+  bluetoothctl connect $BLUETOOTH_HEADSET
+super + shift + b
+  bluetoothctl disconnect $BLUETOOTH_HEADSET
+
+#music 🔥 stuff
+alt + m
+  foot -e ncmpcpp
+alt + space
+  mpc toggle
+alt + equal
+  mpc volume +10
+alt + minus
+  mpc volume -10
+alt + comma 
+  mpc prev
+alt + shift + comma 
+  mpc seek 0%
+alt + period
+  mpc next
+alt + shift + period
+  mpc repeat

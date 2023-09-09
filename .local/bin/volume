@@ -1,0 +1,6 @@
+#!/bin/bash
+
+volume_info=$(pactl list sinks | awk '/^[[:space:]]Volume:/ {print $5}')
+volume_percent=$(echo $volume_info | cut -d'%' -f1)
+
+echo "$volume_percent%"

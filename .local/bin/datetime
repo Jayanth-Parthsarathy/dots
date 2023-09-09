@@ -1,0 +1,9 @@
+#!/bin/sh
+date_time() {
+    date '+%b %d (%a) %I:%M %p'
+}
+
+while true; do
+    echo "$(date_time)"
+    sleep 1
+done

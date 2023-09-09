@@ -1,0 +1,35 @@
+#!/bin/sh
+
+normal_bg="1E1E2EE1"
+normal_fg="#CDD6F4E1"
+selected_bg="#1E1E2EE1"
+selected_fg="#BAC2DEE1"
+out_bg="#1E1E2EE1"
+out_fg="#F38BA8E1"
+
+bemenu-run \
+  -p "選" \
+  -c \
+  -l 10 \
+  -W 0.25 \
+  -w \
+  -R 1 \
+  --binding vim \
+  --fn "JetBrainsMono NerdFont 14" \
+  --tb "$normal_bg" \
+  --tf "$normal_fg" \
+  --fb "$normal_bg" \
+  --ff "$selected_fg" \
+  --cb "$selected_fg" \
+  --cf "$normal_bg" \
+  --nb "$normal_bg" \
+  --nf "$normal_fg" \
+  --hb "$out_bg" \
+  --hf "$normal_fg" \
+  --fbb "$out_fg" \
+  --fbf "$normal_bg" \
+  --sb "$selected_bg" \
+  --sf "$selected_fg" \
+  --ab "$normal_bg" \
+  --af "$normal_fg"
+
