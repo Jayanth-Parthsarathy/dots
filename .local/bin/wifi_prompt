@@ -1,9 +1,9 @@
 #!/bin/bash
 bssid=''
-bssid=$(nmcli device wifi list | sed -n '1!p' | cut -b 9- | bemenu_config -p "select wifi 󰣸 : " -l 20 | cut -d' ' -f1)
+bssid=$(nmcli device wifi list | sed -n '1!p' | cut -b 9- | dmenu -p "select wifi 󰣸 : " -l 20 | cut -d' ' -f1)
 if [ $bssid ='' ]; then
+  echo "No wifi selected"
 else
-	pass=$(echo ""|bemenu_config -p -x "Enter password 󰌋 :")
+	pass=$(echo ""| dmenu -p "Enter password 󰌋 :")
 	nmcli device wifi connect $bssid password $pass
 fi
-
