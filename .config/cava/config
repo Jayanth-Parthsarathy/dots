@@ -183,14 +183,14 @@ foreground = default
 
 gradient = 1
 
-gradient_color_1 = '#94e2d5'
-gradient_color_2 = '#89dceb'
-gradient_color_3 = '#74c7ec'
-gradient_color_4 = '#89b4fa'
-gradient_color_5 = '#cba6f7'
-gradient_color_6 = '#f5c2e7'
-gradient_color_7 = '#eba0ac'
-gradient_color_8 = '#f38ba8'
+gradient_color_1 = '#fb4934'
+gradient_color_2 = '#fe8019'
+gradient_color_3 = '#fabd2f'
+gradient_color_4 = '#b8bb26'
+gradient_color_5 = '#8ec07c'
+gradient_color_6 = '#83a598'
+gradient_color_7 = '#d3869b'
+gradient_color_8 = '#d65d0e'
 
 
 [smoothing]

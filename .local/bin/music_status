@@ -1,0 +1,14 @@
+#!/bin/sh
+
+mpc_status=$(mpc status)
+
+artist=$(echo "$mpc_status" | awk -F ' - ' 'NR==1 {print $1}')
+title=$(echo "$mpc_status" | awk -F ' - ' 'NR==1 {print $2}')
+text=$(echo "$title - $artist")
+
+if [ ${#text} -gt 40 ]; then
+  text=$(echo "$text" | cut -c 1-40)"..."
+fi
+
+echo "$text"
+

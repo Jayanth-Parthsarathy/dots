@@ -1,11 +1,11 @@
 #!/bin/sh
 
-normal_bg="1e1e2eE1"
-normal_fg="#CDD6F4E1"
-selected_bg="#1E1E2EE1"
-selected_fg="#BAC2DEE1"
-out_bg="#1E1E2EE1"
-out_fg="#F38BA8E1"
+normal_bg="#282828E1"
+normal_fg="#ebdbb2E1"
+selected_bg="#98971aE1"  
+selected_fg="#ebdbb2E1"
+out_bg="#98971aE1"
+out_fg="#ebdbb2E1"
 
 bemenu \
   -p "選" \

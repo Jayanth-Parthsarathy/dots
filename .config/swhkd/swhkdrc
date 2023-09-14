@@ -96,4 +96,4 @@ alt + shift + period
 
 #tmux sessionizer
 super + f
-  foot -e $HOME/.local/bin/some
+  foot -e $HOME/.local/bin/fuzzy_tmux

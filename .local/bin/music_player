@@ -1,3 +1,4 @@
 #!/bin/bash
 music=$(wl-paste)
 mpv $music --no-video --volume=50
+
